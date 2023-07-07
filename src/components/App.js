@@ -45,6 +45,8 @@ import LogoWhite3x from '../assets/logo-white@3x.png'
 
 import PoweredByAkash from '../assets/powered-by-akash.svg'
 import PoweredByAkashWhite from '../assets/powered-by-akash-white.svg'
+import ProvidedBy from '../assets/providedby.svg'
+import ProvidedByWhite from '../assets/providedbywhite.svg'
 import TooltipIcon from './TooltipIcon';
 import Voting from './Voting';
 import Networks from './Networks';
@@ -819,12 +821,12 @@ class App extends React.Component {
           )}
         </div>
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <a href="https://akash.network" target="_blank" rel="noreferrer" className="col-md-4 mb-0 text-muted">
+          <a href="https://cogwheel.digital" target="_blank" rel="noreferrer" className="col-md-4 mb-0 text-muted">
             {this.props.theme === 'light'
               ? (
-                <img src={PoweredByAkash} alt="Powered by Akash" width={200} />
+                <img src={ProvidedBy} alt="By Cogwheel Pos Validator" width={200} />
               ) : (
-                <img src={PoweredByAkashWhite} alt="Powered by Akash" width={200} />
+                <img src={ProvidedByWhite} alt="By Cogwheel Pos Validator" width={200} />
               )}
           </a>
 
@@ -832,8 +834,8 @@ class App extends React.Component {
             <a href="https://ecostake.com" target="_blank" rel="noreferrer" className="text-reset text-decoration-none d-block mb-2">
               <span className="d-none d-sm-inline">Built with 💚&nbsp;</span> by ECO Stake 🌱
             </a>
-            <a href={`https://${this.props.directory.domain}`} target="_blank" className="text-reset text-decoration-none d-block small">
-              <span className="d-none d-sm-inline">Interchain APIs from</span> <u>cosmos.directory</u>
+            <a href={`https://explorer.cogwheel.digital`} target="_blank" className="text-reset text-decoration-none d-block small">
+              <span className="d-none d-sm-inline">Manage your assets on</span> <u>explorer.cogwheel.zone</u>
             </a>
           </div>
 
