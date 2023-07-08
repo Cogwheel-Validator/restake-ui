@@ -1,4 +1,7 @@
 SHELL := /bin/bash
 
-restake: setvars
-	docker run --rm -v -p 1000:80 -t ghcr.io/eco-stake/restake-ui
+restake:
+		docker stop restakeui || true
+		docker rm restakeui || true
+		docker build -t restakeui .
+		docker run -p 1000:80 -d -t restakeui
