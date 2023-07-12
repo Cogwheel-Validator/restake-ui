@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-restake:
+restakeui:
 		docker stop restakeui || true
 		docker rm restakeui || true
 		docker build -t restakeui .
